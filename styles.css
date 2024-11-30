@@ -1,0 +1,33 @@
+/* General Card Styles */
+.year-card, .future-card {
+  background: #ffdab9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.year-card button, .future-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ff9671;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.year-card button:hover, .future-card button:hover {
+  background-color: #ff6f61;
+}
+
+.timeline, .future-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.hidden {
+  display: none;
+}
