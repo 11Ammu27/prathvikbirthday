@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+      background-color: #f5f5f5;
+    }
+
+    h1, h2, p {
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(to right, #ff6f91, #ff9671);
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      width:100%;
+      background: url('bg.jpeg') no-repeat center center/cover;
+      /* background-size: contain; */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      padding: 20px;
+    }
+
+    /* General Card Styles */
+    .year-card, .future-card {
+      background: #ffdab9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .year-card button, .future-card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ff9671;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .year-card button:hover, .future-card button:hover {
+      background-color: #ff6f61;
+    }
+
+    .timeline, .future-timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    /* Quotes Section */
+    .wishes {
+      background: #ffe4e1;
+      padding: 20px;
+    }
+
+    .quotes {
+      text-align: center;
+    }
+
+    .quotes button {
+      background-color: #ff9671;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    /* Gallery Section */
+    .picture-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .picture-grid img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      background: #ff6f91;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#journey">1-19 Years Journey</a></li>
+      <li><a href="#wishes">Birthday Wishes</a></li>
+      <li><a href="#future">Future Journey</a></li>
+      <li><a href="#gallery">Handsomes! Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>🎉 Happy Birthday to My Caring Best Friend! 🎉</h1>
+      <p>"Celebrating 19 years of an incredible life filled with love, courage, and adventures."</p>
+    </div>
+  </header>
+
+  <!-- 1-19 Years Journey -->
+  <section id="journey" class="journey">
+    <h2>🌟 Your Journey from 1 to 19 🌟</h2>
+    <div class="timeline">
+      <div class="year-card">
+        <h3>1-2 Years</h3>
+        <p>Discovering the world, brought joy with your inncocent smile.</p>
+        <button class="child-photo-button">Click me</button>
+      </div>
+      <div class="year-card">
+        <h3>3-4 Years</h3>
+        <p>Took first confident steps, started speaking adorable words.</p>
+        <button class="child-photo-button">R-Resilence</button>
+      </div>
+      <div class="year-card">
+        <h3>5-6 Years</h3>
+        <p>Became bold and daring, showing an eagerness to learn.</p>
+        <button class="child-photo-button">A-Ambitious</button>
+      </div>
+      <div class="year-card">
+        <h3>7-8 Years</h3>
+        <p>Started discovering talents creatively.</p>
+        <button class="child-photo-button">T-Talented</button>
+      </div>
+      <div class="year-card">
+        <h3>9-13 Years</h3>
+        <p>Shown as Yakshagana artist, embracing art and tradition.</p>
+        <button class="child-photo-button">Click me </button>
+      </div>
+      <div class="year-card">
+      <h3>14-15 Years</h3>
+        <p>Learnt swimming, mastering the water with every stroke. </p>
+        <button class="child-photo-button">Click me </button>
+      </div>
+      <div class="year-card">
+        <h3>16-17 Years</h3>
+          <p>Discovered cooking, experimenting with flavours & perfecting dishes. Became Pujari. </p>
+          <button class="child-photo-button">I-Innovative</button>
+        </div>
+        <div class="year-card">
+          <h3>18-19 Years</h3>
+            <p>Stood as a courageous, passionate, and remarkable individual. </p>
+            <button class="child-photo-button">Click me </button>
+          </div>
+          <div id="images">
+            <img id="year1-2" src="child.jpeg" class="hidden" alt="Age 1-2">
+            <img id="year9-13" src="ysgna.jpeg" class="hidden" alt="Age 9-13">
+            <img id="year14-15" src="swim.jpeg" class="hidden" alt="Age 14-15">
+            <img id="year18-19" src="egtn.jpeg" class="hidden" alt="Age 18-19">
+          </div>
+          
+          <button class="child-photo-button" data-img-id="year1-2">P-Power</button>
+          <button class="child-photo-button" data-img-id="year9-13">R-Resilience</button>
+          <button class="child-photo-button" data-img-id="year14-15">V-Vibrant</button>
+          <button class="child-photo-button" data-img-id="year18-19">K- Knowledgeable</button>
+          
+          
+    </div>
+  </section>
+
+  <!-- Birthday Wishes Section -->
+  <section id="wishes" class="wishes">
+    <h2>💌 Birthday Wishes 💌</h2>
+    <div class="quotes">
+      <p>"May your courage and kindness always shine through."</p>
+      <p>"Wishing you a birthday as special as your beautiful soul!."</p>
+      <p>"Wishing you a year filled with endless happiness, growth, and success."</p>
+
+      <p>"Here's to more memories, laughter, and success in the comming years ahead!"</p>
+      <p>"Happy Birthday! May your day be filled with the same joy and warmth you bring to me.. You are truly a gift to me."</p>
+      <p>"Another year older, but the best part is that you continue to grow wiser, kinder, and more beautiful every day. Happy Birthday darling!"</p>
+
+<p>"To someone whose heart shines brighter with each passing year—may this birthday bring you closer to your dreams and fill your life with love and laughter."</p>
+<p>28/09/2024    27/10/2024       12/11/2024</p>
+<button id="showWishImage">Show Surprise Image</button>
+<div id="wishImage" class="hidden">
+  <img src="cke.jpeg" alt="Surprise Image" />
+</div>
+
+    </div>
+  </section>
+
+  <!-- Future Journey Section -->
+  <section id="future" class="future">
+    <h2>✨ Your Bright Future ✨</h2>
+    <div class="future-timeline">
+      <div class="future-card">
+        <h3>20-23 Years</h3>
+        <p>I need you to keep the first step to be a gentleman .</p>
+        <button class="future-alert-button">Fulfills-dream</button>
+      </div>
+      <div class="future-card">
+        <h3>24-27 Years</h3>
+        <p>Build a successful career and become a well-known leader in your field.</p>
+        <button class="future-alert-button">Explore the path</button>
+      </div>
+      <div class="future-card">
+        <h3>28-31 Years</h3>
+        <p>Gain confidence, achieve important goals, and find your true path.</p>
+        <button class="future-alert-button">Embrace the journey</button>
+      </div>
+      <div class="future-card">
+        <h3>32-35 Years</h3>
+        <p>Grow stronger, make meaningful connections, and establish yourself in your career.".</p>
+        <button class="future-alert-button">Take the leap</button>
+      </div>
+      <div class="future-card">
+        <h3>36-39 Years</h3>
+        <p>Reach new heights of success, balancing work and life with wisdom..</p>
+        <button class="future-alert-button">Climb higher</button>
+      </div>
+      <div class="future-card">
+        <h3>40-43 Years</h3>
+        <p>Let your journey be filled with fulfillment, & look up as a mentor & leader.</p>
+        <button class="future-alert-button">Lead with purpose</button>
+      </div>
+      <div class="future-card">
+        <h3>44-47 Years</h3>
+        <p>Great Achievements and enjoy the fruits of your hardwork.</p>
+        <button class="future-alert-button">Celebrate success</button>
+      </div>
+      <div class="future-card">
+        <h3>48-51 Years</h3>
+        <p>Inspire others with your resilence and strength.</p>
+        <button class="future-alert-button">Inspire & Empower</button>
+      </div>
+      <div class="future-card">
+        <h3>52-55 Years</h3>
+        <p>Reflect on your increadible journey & continue to grow with grace & wisdom.</p>
+        <button class="future-alert-button">Reflect & grow</button>
+      </div>
+      <div class="future-card">
+        <h3>56-59 Years</h3>
+        <p>Look back with pride, knowing you've lived a life full of love, purpose and success.</p>
+        <button class="future-alert-button">Legacy of love</button>
+      </div>
+      <div class="future-card">
+        <h3>60-100.! Years</h3>
+        <p>Have a joyful, and great retired life. Retirement becomes a golden chapter where every day is a celebration of the life you’ve built and the legacy you continue to create.</p>
+        <button class="future-alert-button">Take a break & celebrate Retirement </button>
+      </div>
+      <div class="future-card">
+        <h3>!!!!! F!o!r!e!v!e!r!!!!</h3>
+        <p>Started with hello!!!, as a stranger but now the close one, I have a possessiveness when you talk about others wherein I get jealous tooo. If you read this and reply me as "!!!" it means that you saw the whole websitee..!!!</p>
+        <button class="future-alert-button">Hello=>Attachment </button>
+      </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Picture Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>📸 Picture Gallery 📸</h2>
+    <button id="galleryButton">Show All Pictures</button>
+    <div id="pictureGrid" class="picture-grid hidden">
+      <img src="one.jpeg" alt="Photo 1">
+      <img src="ten.jpeg" alt="Photo 2">
+      <img src="two.jpeg" alt="Photo 3">
+      <img src="three.jpeg" alt="Photo 4">
+      <img src="four.jpeg" alt="Photo 5">
+      <img src="five.jpeg" alt="Photo 6">
+      <img src="six.jpeg" alt="Photo 7">
+      <img src="nine.jpeg" alt="Photo 7">
+      <img src="eight.jpeg" alt="Photo 8">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed with ❤️ by Amrutha 2024</p>
+  </footer>
+
+  <script>
+    // Show Childhood Photos
+    document.querySelectorAll('.child-photo-button').forEach((button, index) => {
+      button.addEventListener('click', () => {
+        alert(`Showing childhood photos for age range ${index * 2 + 1}-${index * 2 + 2} years.`);
+      });
+    });
+
+    // Future Journey Alerts
+    document.querySelectorAll('.future-alert-button').forEach((button, index) => {
+      button.addEventListener('click', () => {
+        alert(`Future milestone reached for age range ${20 + index * 3}-${23 + index * 3} years.`);
+      });
+    });
+
+    // Show Picture Gallery
+    document.getElementById('galleryButton').addEventListener('click', () => {
+      document.getElementById('pictureGrid').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
